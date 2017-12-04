@@ -1,0 +1,45 @@
+include ../mixins/mixins
+
+
+doctype html
+html(lang="en")
+	head
+		block title_name
+			title Tempalate title
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="msapplication-tap-highlight" content="no")
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no")
+		link(rel="icon" href="favicon.ico" type="image/x-icon")
+		link(rel="shortcut icon" href="favicon.ico" type="image/x-icon")
+		// bower:css
+		// endbower
+		link(rel="stylesheet" href="css/screen.css")
+		meta(property="og:locale" content="en_GB")
+		meta(property="og:type" content="website")
+		meta(property="og:title" content=title)
+		meta(property="og:description" content=description)
+		meta(property="og:site_name" content=title)
+		meta(property="og:image" content=meta_image)
+
+		meta(name="twitter:card" content=card)
+		meta(name="twitter:site" content=title)
+		meta(name="twitter:title" content=title)
+		meta(name="twitter:description" content=description)
+		meta(name="twitter:creator" content=autor)
+		meta(name="twitter:image" content=meta_image)
+		include ../../elements/favicons/favicons.html
+	body
+
+
+		block header
+
+		block main_content
+
+
+		// bower:js
+		// endbower
+		script(src="js/index.js")
+
+
+
