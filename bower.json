@@ -14,6 +14,11 @@
     "test",
     "tests"
   ],
-  "dependencies": {},
+    "dependencies": {
+    "jquery": "2.2.4",
+    "owl.carousel": "^2.2.1",
+    "wow": "wowjs#^1.1.2",
+    "animate.css": "^3.5.2"
+  },
   "devDependencies": {}
 }
