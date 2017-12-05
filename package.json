@@ -26,7 +26,6 @@
     "gulp-iconfont": "^9.0.2",
     "gulp-iconfont-css": "^2.1.0",
     "gulp-if": "^2.0.0",
-    "gulp-imagemin": "^4.0.0",
     "gulp-plumber": "^1.0.1",
     "gulp-postcss": "^7.0.0",
     "gulp-print": "^2.0.1",
@@ -43,6 +42,7 @@
     "wiredep": "^4.0.0"
   },
   "dependencies": {
+    "gulp-imagemin": "^4.0.0",
     "gulp-sass": "^3.1.0"
   }
 }
