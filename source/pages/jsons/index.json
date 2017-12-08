@@ -4,4 +4,19 @@
 	, "meta_image": "http://http://kharkivfrontend.org/img/ava.jpg"
 	, "card": "summary"
 	, "autor": "Kharkiv Frontend Meetup"
+	,"logo": {
+		"src": "logo.png"
+		, "href": "intro"
+	}
+	,"small_logo": {
+		"src": "logo-small.png"
+		, "href": "intro"
+	}
+	, "menu": [
+		["HOME", "intro"]
+		, ["speakers", "speakers"]
+		, ["agenda", "agenda"]
+		, ["location", "location"]
+		, ["Get Ticket", "ticket"]
+	]
 }

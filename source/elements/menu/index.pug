@@ -1,0 +1,20 @@
+mixin menu(baseClass, menuData, preselectItem)
+	-var menuItems = menuData || menu
+	ul(class=baseClass+'-list')
+		each val, index in menuItems
+			if index == preselectItem
+				li(class=baseClass+'-list_item')
+					a.scroll_spy_link.scroll-link(href="#"+val[1] class=baseClass+'-list_item-link active')=val[0]
+			else
+				li(class=baseClass+'-list_item')
+					a.scroll_spy_link.scroll-link(href="#"+val[1] class=baseClass+'-list_item-link ')=val[0]
+
+
+header
+	.header_inner
+		a.scroll-link(href="#"+small_logo.href).logo
+			+insert-image(small_logo.src, 'logo', 'logo-img')
+		button.toggle-menu-button
+			span.toggle-menu-button-lines
+		nav.header_menu#header_menu
+			+menu("header_menu", menu, 0)
