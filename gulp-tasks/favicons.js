@@ -20,7 +20,7 @@ var onlyPNGFilter = filter(['**/*.png'], {restore: true});
 			, appDescription: 'frontend meetup'
 			, developerName: 'frontend meetup'
 			, developerURL: 'frontend meetup'
-			, background: 'transpatent'
+			, background: '#fff'
 			, path: '/'
 			, url: 'frontend meetup'
 			, display: 'standalone'
