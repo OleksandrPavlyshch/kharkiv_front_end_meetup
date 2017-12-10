@@ -13,8 +13,7 @@
 		, "href": "intro"
 	}
 	, "menu": [
-		["HOME", "intro"]
-		, ["speakers", "speakers"]
+		["speakers", "speakers"]
 		, ["agenda", "agenda"]
 		, ["location", "location"]
 		, ["Get Ticket", "ticket"]
