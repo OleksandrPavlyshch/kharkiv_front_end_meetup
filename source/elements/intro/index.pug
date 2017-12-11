@@ -1,1 +1,16 @@
-section#intro.scroll-spy
+section.intro#intro.scroll-spy
+	+insert-image("logo.png", "Kharkiv front-eng logo", "intro-logo")
+	h1.intro-event_name #_0
+
+	.intro-info
+		p.intro-time
+			+insert-image("clock-ico.png", "time", "intro-time-icon")
+			span 9.12.17
+				br
+				| 12:00
+		a.scroll-link.intro-location(href="#map")
+			+insert-image("map-mark.svg", "location", "intro-location-icon")
+			address.intro-location-data
+				| БЦ Протон
+				br
+				| Богдана Хмельницкого 24

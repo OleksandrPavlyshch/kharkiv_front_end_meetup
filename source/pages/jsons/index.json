@@ -15,7 +15,7 @@
 	, "menu": [
 		["speakers", "speakers"]
 		, ["agenda", "agenda"]
-		, ["location", "location"]
+		, ["location", "map"]
 		, ["Get Ticket", "ticket"]
 	]
 }

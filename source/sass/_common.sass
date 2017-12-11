@@ -8,14 +8,16 @@ body
 	background-image: url("/img/background.jpg")
 	background-repeat: repeat-y
 	background-position: 50% 0
-	background-size: 100% auto
-	height: 3000px
+	background-size: 150% auto
+	+min-screen($mobile)
+		background-size: 100% auto
+	// height: 3000px
 
 html,
 body
 	min-height: 100%
 	background-color: $white
+	height: auto
 
-section
-	height: 300px
+
 // common blocks
