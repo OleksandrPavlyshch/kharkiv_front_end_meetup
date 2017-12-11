@@ -61,7 +61,7 @@
 		let $this = $(this)
 			, idMark = $this.attr('href')
 			, scrollVal = (idMark == "intro") ? 0 : $(idMark).offset().top;
-		window.scroll({ top: scrollVal, left: 0, behavior: 'smooth' });
+		window.scroll({ top: scrollVal - 80, left: 0, behavior: 'smooth' });
 	});
 
 	//init menu open
