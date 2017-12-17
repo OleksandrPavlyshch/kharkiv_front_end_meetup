@@ -18,4 +18,72 @@
 		, ["location", "map"]
 		, ["Get Ticket", "ticket"]
 	]
+	, "speakers": [
+		{
+			"person": {
+				"name": "Виталий Петренко"
+				, "info": "Frontend Developer. Любитель науки и космоса. Человек с настоящим 8-битным детством."
+				, "image": "speaker1.jpg"
+			},
+			"talk": {
+				"name": "HTMLBoilerplate своими руками. Без регистрации и SMS."
+				, "info": "Как написать свой Boilerplate для верстки с webpack и не сойти с ума."
+			}
+		}
+		, {
+			"person": {
+				"name": "Александра Калинина"
+				, "info": "Full stack JS developer в Valor Software. Интересы: BigData && nodejs, Data Science, Product management skills, Neurophysiology, Spiritual growth"
+				, "image": "speaker2.jpg"
+			},
+			"talk": {
+				"name": "Service Worker на проде"
+				, "info": "История о том, как мы сами создали себе проблему, но смекалка и находчивость помогли ее разрулить."
+			}
+		}
+		, {
+			"person": {
+				"name": "Олег Момот"
+				, "info": "Software Engineer в EPAM Systems. JavaScript разработчик. Хочу внести свой вклад в развитие сообщества JavaScript'a."
+				, "image": "speaker3.jpg"
+			},
+			"talk": {
+				"name": "GraphQL. JavaScript библиотека? Зачем?"
+				, "info": "Почему REST API превратился REST-in-Peace API и что с ним не так? Взглянем на основные проблемы REST API и их решение с помощью GraphQL и попробуем его на \"вкус\" с точки зрения клиентской стороны."
+			}
+		}
+		, {
+			"person": {
+				"name": "Вячеслав Чуб"
+				, "info": "Full-Stack developer в Valor Software"
+				, "image": "speaker4.jpg"
+			},
+			"talk": {
+				"name": "Свежий взгляд на KISS"
+				, "info": "В настоящее время проблема плохого кода - одна из серьезнейших проблем в IT. Мой доклад представляет собой попытку выявить некоторые причины этой проблемы и наметить пути ее решения."
+			}
+		}
+		, {
+			"person": {
+				"name": "Дарья Лиманская"
+				, "info": "Senior Front End Developer. Vlogger (TechXY channel)"
+				, "image": "speaker5.jpg"
+			},
+			"talk": {
+				"name": "D3.js - инструмент для работы с данными"
+				, "info": "На текущий момент d3.js - самый популярный open-source инструмент для визуализации данных. Основная задумка этой библиотеки - эффективная и эргономичная манипуляция большим объемом информации. В этом докладе будут рассмотрены, на мой взгляд, самые интересные features из d3.js core, а так же community based modules."
+			}
+		}
+		, {
+			"person": {
+				"name": "Александр Смолянинов"
+				, "info": "Frontend Tech Lead в Zfort Group. Один из создателей и соавтор еженедельного дайджеста по фронтенду на habrahabr.ru"
+				, "image": "speaker6.jpg"
+			},
+			"talk": {
+				"name": "Как заработать на accessibility"
+				, "info": "Несмотря на важность и актуальность темы доступности, многие продолжают либо ее игнорировать, либо обращать внимание по остаточному принципу. В попытках сломать этот тренд предлагаем вам альтернативный взгляд на доступность в вебе: меньше морализаторства, больше прагматизма."
+			}
+		}
+	]
 }

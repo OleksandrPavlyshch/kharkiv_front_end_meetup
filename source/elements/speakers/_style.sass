@@ -5,3 +5,46 @@
 		color: $primary-blue
 		text-transform: uppercase
 		margin-bottom: 100px
+	&-list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+	&-person
+		flex: 1 0 26%
+		margin-bottom: 50px
+		max-width: 26%
+		&-image
+			height: 200px
+			width: 200px
+			display: inline-block
+			background-repeat: no-repeat
+			background-position: 50% 50%
+			background-size: cover
+			vertical-align: middle
+			&-wrap
+				margin-bottom: 30px
+				text-align: center
+				position: relative
+				white-space: nowrap
+				&:before,
+				&:after
+					vertical-align: middle
+					margin: auto
+					font-size: 200px
+					line-height: 200px
+				&:before
+					content: "{"
+					padding-right: 10px
+				&:after
+					content: "}"
+					padding-left: 10px
+		&-name
+			text-align: center
+			margin-bottom: 15px
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
+			font-size: 35px
+		&-info
+			font-size: 18px
+			font-weight: 700
+			margin-bottom: 20px
+			color: $primary-blue
