@@ -1,0 +1,39 @@
+.agenda
+	padding: 50px 10px 100px
+	&-header
+		text-align: center
+		color: $primary-blue
+		text-transform: uppercase
+		margin-bottom: 50px
+	&-table
+		@extend %row
+		background-color: $white
+		box-shadow: 0px 0px 18px 3px $primary-blue
+		&-head
+			+max-screen($mobile - 1)
+				display: none
+				// display: block
+			th
+				padding: 30px 15px
+				text-align: left
+				font-size: $text-header-size
+				vertical-align: middle
+		&-body
+			& tr
+				&:nth-child(odd)
+					background-color: lighten($primary-blue, 20%)
+					color: $white
+			tr
+				display: block
+				padding: 20px 0
+				+min-screen($mobile - 1)
+					display: table-row
+					padding: 0
+			td
+				vertical-align: middle
+				padding: 5px 15px
+				font-size: 20px
+				display: block
+				+min-screen($mobile - 1)
+					padding: 15px 25px
+					display: table-cell

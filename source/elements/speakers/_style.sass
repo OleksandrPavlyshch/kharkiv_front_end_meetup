@@ -6,21 +6,34 @@
 		text-transform: uppercase
 		margin-bottom: 100px
 	&-list
-		display: flex
-		flex-wrap: wrap
-		justify-content: space-around
+		+min-screen($mobile - 1)
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-around
+			flex-direction: row
 	&-person
-		flex: 1 0 26%
+		// flex: 1 0 0
 		margin-bottom: 50px
-		max-width: 26%
+		padding: 0 30px
+		+min-screen($tablet - 1)
+			flex: 1 0 45%
+			max-width: 45%
+		+min-screen($mdpi)
+			margin-bottom: 100px
+			margin-bottom: 100px
+			flex: 1 0 26%
+			max-width: 26%
 		&-image
-			height: 200px
-			width: 200px
 			display: inline-block
 			background-repeat: no-repeat
 			background-position: 50% 50%
 			background-size: cover
 			vertical-align: middle
+			height: 180px
+			width: 180px
+			+min-screen($mobile - 1)
+				height: 200px
+				width: 200px
 			&-wrap
 				margin-bottom: 30px
 				text-align: center
@@ -28,25 +41,59 @@
 				white-space: nowrap
 				&:before,
 				&:after
-					position: absolute
-					font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
+					@extend %icon
 					vertical-align: middle
-					font-size: 200px
-					line-height: 200px
-					height: 200px
+					font-size: 80px
+					line-height: 1
+					+min-screen($mobile - 1)
+						font-size: 120px
+					+min-screen($mdpi)
+						font-size: 150px
+						line-height: 1
+					// height: 200px
 				&:before
-					content: "{"
-					padding-right: 10px
+					content: $icon-bracket-l
+					padding-right: 20px
 				&:after
-					content: "}"
-					padding-left: 10px
+					content: $icon-bracket-r
+					padding-left: 20px
 		&-name
 			text-align: center
 			margin-bottom: 15px
 			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
-			font-size: 35px
+			font-size: $text-header-size 
 		&-info
 			font-size: 18px
 			font-weight: 700
-			margin-bottom: 20px
+			margin-bottom: 25px
 			color: $primary-blue
+			+min-screen($tablet - 1)
+				margin-bottom: 25px
+	&-talk
+		&-name
+			color: $primary-red
+			// position: relative
+			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
+			display: flex
+			align-items: center
+			margin-bottom: 25px
+			line-height: 1.25
+			// font-size: $text-header-size
+			text-transform: uppercase
+			font-size: $text-header-size/1.5
+			+min-screen($mobile - 1)
+				font-size: $text-header-size
+			&:before
+				@extend %icon
+				content: $icon-bracket-l
+				font-size: 60px
+				margin-right: 10px
+				color: $primary-light-red
+				+min-screen($mobile - 1)
+					font-size: 111px
+		&-info
+			font-size: 20px
+			&:before
+				content: "{"
+			&:after
+				content: "}"

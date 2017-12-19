@@ -1,1 +1,16 @@
-section#agenda.scroll-spy
+section#agenda.agenda.scroll-spy
+
+	h1.agenda-header agenda
+
+	table.agenda-table
+		thead.agenda-table-head
+			tr
+				th Time
+				th Speaker
+				th Topic
+		tbody.agenda-table-body
+			each speaker in speakers
+				tr
+					td.agenda-table-time=speaker.talk.time
+					td.agenda-table-speaker=speaker.person.name
+					td.agenda-table-talk=speaker.talk.name
