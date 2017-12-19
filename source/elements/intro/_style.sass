@@ -8,19 +8,19 @@
 	flex-direction: column
 	padding: 120px 0 50px
 	min-height: 100vh
-	+min-screen($mobile)
+	+min-screen($mobile + 1)
 		padding: 0
 	&-logo
 		margin: 2% auto 5%
 		display: inline-block
 		max-width: 60%
-		+min-screen($mobile)
+		+min-screen($mobile + 1)
 			margin: 2% auto
 			max-width: 35%
 	&-event_name
 		font-size: 20px
 		color: $black
-		+min-screen($mobile)
+		+min-screen($mobile + 1)
 			font-size: 44px
 	&-info
 		overflow: hidden
@@ -28,13 +28,13 @@
 		padding: 0 30px
 		color: $primary-blue
 		margin-top: 30px
-		+min-screen($mobile)
+		+min-screen($mobile + 1)
 			width: 70%
 			margin: 10% auto 0
 	&-location
 		color: $primary-blue
 		font-size: 17px
-		+min-screen($mobile)
+		+min-screen($mobile + 1)
 			align-items: center
 			flex-direction: row
 			font-size: 25px
@@ -45,13 +45,13 @@
 			flex: 1
 		&-icon
 			width: 35px
-			+min-screen($mobile)
+			+min-screen($mobile + 1)
 				margin-right: 10px
 				width: 50px
 	&-time
 		margin-bottom: 16px
 		font-size: 17px
-		+min-screen($mobile)
+		+min-screen($mobile + 1)
 			text-align: left
 			align-items: center
 			float: right
@@ -63,7 +63,7 @@
 			flex: 1
 		&-icon
 			width: 35px
-			+min-screen($mobile)
+			+min-screen($mobile + 1)
 				margin-right: 10px
 				width: 50px
 
