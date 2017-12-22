@@ -44,7 +44,7 @@
 		let $scrollSpyLinks = $('.scroll_spy_link');
 		let currentSection;
 		for (i in sections) {
-			if (sections[i] <= scrollPosition + 80) {
+			if (sections[i] <= scrollPosition + 160) {
 				currentSection = i;
 				$scrollSpyLinks.removeClass('active');
 				$scrollSpyLinks.filter('[href="#' + currentSection + '"]').addClass('active');
