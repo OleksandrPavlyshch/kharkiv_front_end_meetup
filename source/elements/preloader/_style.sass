@@ -1,0 +1,63 @@
+$loader-count: 5
+
+$num: 16
+$size: 20px
+$spread: 150px
+
+$color: #7f0
+
+$speed: 3s
+$tail: 1
+
+@keyframes spin
+	0%
+		transform: rotate(0)
+	100%
+		transform: rotate(360deg)
+
+=color-tail($color, $num, $i)
+	@keyframes change-loader-color#{$i}
+		0%
+			background-color: lighten($color, 40 / $num * $i)
+		50%
+			background-color: lighten(#3aaccd, 40 / $num * $i)
+		100%
+			background-color: lighten(#fe003e, 40 / $num * $i)
+
+	animation: change-loader-color#{$i} 9s ease infinite
+
+.preloader
+	position: fixed
+	z-index: 1000
+	left: 0
+	top: 0
+	width: 100%
+	height: 100%
+	background-color: black
+	&_item
+		position: absolute
+		top: 50%
+		left: 50%
+		animation: spin ($speed * 1.5 * $loader-count) linear infinite
+		&-dot
+			width: $spread
+			margin: 0 (- $spread / 2)
+			&:after
+				content: ''
+				display: block
+				width: $size
+				height: $size
+				position: absolute
+				border-radius: 100%
+			@for $i from 1 through $num
+				$c: (1 / $num * $i)
+				&:nth-child(#{$i})
+					animation: spin $speed (- $c * .2s * $tail) ease infinite
+					&:after
+						// animation: change-loader-color 12s ease-in infinite
+						// background: lighten($color, 40 / $num * $i)
+						+color-tail($color, $num, $i)
+						transform: scale(#{$c})
+		@for $i from 1 through $loader-count
+			&:nth-child(#{$i})
+				animation-delay: ($speed * -1.5 * $i)

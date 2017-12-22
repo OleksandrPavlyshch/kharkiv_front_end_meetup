@@ -3,7 +3,7 @@ section#speakers.speakers.scroll-spy
 
 	.speakers-list
 		each speaker in speakers
-			.speakers-person.wow.fadeIn
+			.speakers-person.wow.fadeInUp(data-wow-duration="1s")
 				.speakers-person-image-wrap
 					.speakers-person-image(style="background-image: url('/img/" + speaker.person.image + "');")
 				h2.speakers-person-name=speaker.person.name
