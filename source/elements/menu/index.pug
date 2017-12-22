@@ -8,7 +8,8 @@ mixin menu(baseClass, menuData, preselectItem)
 			else
 				li(class=baseClass+'-list_item')
 					a.scroll_spy_link.scroll-link(href="#"+val[1] class=baseClass+'-list_item-link ')=val[0]
-
+		li(class=baseClass+'-list_item')
+			a.menu-button(href=menu_button[1], target="_blank")=menu_button[0]
 
 header
 	.header_inner_wrap

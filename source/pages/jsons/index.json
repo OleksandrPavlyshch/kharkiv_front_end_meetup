@@ -16,8 +16,9 @@
 		["speakers", "speakers"]
 		, ["agenda", "agenda"]
 		, ["location", "map"]
-		, ["Get Ticket", "ticket"]
 	]
+	, "menu_button" : ["Get Ticket", "#"]
+
 	, "speakers": [
 		{
 			"person": {
