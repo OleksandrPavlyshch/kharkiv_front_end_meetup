@@ -15,14 +15,14 @@ var gulp = require('gulp')
 gulp.task('sass', function () {
 
 	var processors = [
-		autoprefixer({browsers: ['last 2 version', 'Android 4'], cascade: false}),
-		mqpacker({
-			sort: function (a, b) {
-				a = a.replace(/\D/g,'');
-				b = b.replace(/\D/g,'');
-				return b-a;
-			}
-		})
+		autoprefixer({browsers: ['last 2 version', 'Android 4'], cascade: false})
+		// ,mqpacker({
+		// 	sort: function (a, b) {
+		// 		a = a.replace(/\D/g,'');
+		// 		b = b.replace(/\D/g,'');
+		// 		return b-a;
+		// 	}
+		// })
 	];
 
 
