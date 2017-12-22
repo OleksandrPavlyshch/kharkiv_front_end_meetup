@@ -1,9 +1,9 @@
 section#speakers.speakers.scroll-spy
-	h1.section_header speakers
+	h1.section_header.wow.fadeInUp speakers
 
 	.speakers-list
 		each speaker in speakers
-			.speakers-person
+			.speakers-person.wow.fadeIn
 				.speakers-person-image-wrap
 					.speakers-person-image(style="background-image: url('/img/" + speaker.person.image + "');")
 				h2.speakers-person-name=speaker.person.name
