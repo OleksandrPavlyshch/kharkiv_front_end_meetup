@@ -2,13 +2,13 @@ section.intro#intro.scroll-spy
 	+insert-image("logo.png", "Kharkiv front-eng logo", "intro-logo wow fadeInUp")
 	h1.wow.fadeInUp.intro-event_name(data-wow-delay=".2s") #_0
 
-	.intro-info
-		p.intro-time.wow.fadeInRight(data-wow-delay=".3s")
+	.intro-info.wow.fadeInUp
+		p.intro-time(data-wow-delay=".3s")
 			+insert-image("clock-ico.png", "time", "intro-time-icon")
 			span 9.12.17
 				br
 				| 12:00
-		a.scroll-link.intro-location.fadeInLeft.wow(href="#map", data-wow-delay=".3s")
+		a.scroll-link.intro-location(href="#map" data-wow-delay=".3s")
 			+insert-image("map-mark.svg", "location", "intro-location-icon")
 			address.intro-location-data
 				| БЦ Протон
