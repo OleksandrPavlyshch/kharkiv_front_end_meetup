@@ -1,36 +1,33 @@
 .toggle-menu-button
 	+pseudo
 	display: none
-	margin-top: 15px
-	width: 46px
-	height: 30px
+	margin-top: 10px
+	width: 30px
+	height: 25px
 	cursor: pointer
 	background-color: transparent
-	border-top: 3px solid $primary-blue
+	border-top: 2px solid $primary-blue
 	transition: all .3s ease
 	+max-screen($tablet)
 		display: inline-block
 	&:before,
 	&:after
-		border-top: 3px solid $primary-blue
+		border-top: 2px solid $primary-blue
 		transition: all .3s ease
 	&:before
-		width: 25px
-		top: 13px
+		width: 16px
+		top: 8px
 		transform-origin: right top
 	&:after
-		width: 38px
-		top: 27px
+		width: 23px
+		top: 19px
 		transform-origin: left top
 	.is-menu-show &
-		// border-top-color: $primary-red
-		// border-top-width: 2px
+
 		&:before,
 		&:after
-			// border-top-color: $primary-red
 			width: 50%
 			top: 0
-			// border-top-width: 2px
 		&:before
 			transform: rotate(-45deg)
 		&:after

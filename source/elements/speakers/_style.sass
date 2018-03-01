@@ -10,22 +10,22 @@
 		// flex: 1 0 0
 		margin-bottom: 50px
 		padding: 0 30px
-		+min-screen($tablet - 1)
+		+min-screen($mdpi)
 			flex: 1 0 45%
 			max-width: 45%
 		+min-screen($mdpi)
 			margin-bottom: 100px
 			margin-bottom: 100px
-			flex: 1 0 26%
-			max-width: 26%
+			// flex: 1 0 26%
+			// max-width: 26%
 		&-image
 			display: inline-block
 			background-repeat: no-repeat
 			background-position: 50% 50%
 			background-size: cover
 			vertical-align: middle
-			height: 180px
-			width: 180px
+			height: 146px
+			width: 146px
 			+min-screen($mobile - 1)
 				height: 200px
 				width: 200px
@@ -38,20 +38,21 @@
 				&:after
 					@extend %icon
 					vertical-align: middle
-					font-size: 80px
+					font-size: 140px
 					line-height: 1
 					+min-screen($mobile - 1)
-						font-size: 120px
-					+min-screen($mdpi)
-						font-size: 150px
+						font-size: 186px
 						line-height: 1
-					// height: 200px
 				&:before
-					content: $icon-bracket-l
-					padding-right: 20px
+					content: $icon-bracket-l-origin
+					padding-right: 5px
+					+min-screen($mobile - 1)
+						padding-right: 20px
 				&:after
-					content: $icon-bracket-r
-					padding-left: 20px
+					content: $icon-bracket-r-origin
+					padding-left: 5px
+					+min-screen($mobile - 1)
+						padding-left: 20px
 		&-name
 			text-align: center
 			margin-bottom: 15px
@@ -67,25 +68,23 @@
 	&-talk
 		&-name
 			color: $primary-red
-			// position: relative
 			font-family: Arial, "Helvetica Neue", Helvetica, sans-serif
 			display: flex
 			align-items: center
 			margin-bottom: 25px
 			line-height: 1.25
-			// font-size: $text-header-size
 			text-transform: uppercase
 			font-size: $text-header-size/1.5
 			+min-screen($mobile - 1)
 				font-size: $text-header-size
 			&:before
 				@extend %icon
-				content: $icon-bracket-l
-				font-size: 60px
+				content: $icon-bracket-l-origin
+				font-size: 50px
 				margin-right: 10px
 				color: $primary-light-red
 				+min-screen($mobile - 1)
-					font-size: 111px
+					font-size: 104px
 		&-info
 			font-size: 20px
 			&:before
